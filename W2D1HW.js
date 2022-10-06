@@ -25,11 +25,14 @@
     let vowels = "aeiou"
 
     function isCharAVowel(char) { 
-         for (let i = 0; i < vowels.length; i++){
-             return (char.toLowerCase() === vowels[i]) ?  true : false;
-         }          
-}
-//  console.log(isCharAVowel("U"))
+        for (let i = 0; i < vowels.length; i++){
+            if (char.toLowerCase() === vowels[i]){
+                return true
+            }          
+        }
+        return false
+    }
+  console.log(isCharAVowel("P"))
 
 // .4 (Done)
 
